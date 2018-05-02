@@ -27,6 +27,14 @@ public class Article {
 
     }
 
+    public Article(String title, String section, String publicationDate, String url) {
+        mTitle = title;
+        mUrl = url;
+        mSection = section;
+        mPublicationDate = publicationDate;
+
+    }
+
 
     /* getter methods for Title */
 

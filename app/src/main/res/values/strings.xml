@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">NewsApp-P6</string>
     <string name="no_articles">No Articles available at the moment. Please come back later.</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Settings</string>
     <string name="no_internet">No internet connection. Please connect.</string>
+
+    <string name="settings_numberofnews_label">Number of news</string>
+    <string name="settings_numberofnews_key" translatable="false">page-size</string>
+    <string name="settings_numberofnews_default" translatable="false">0</string>
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">ORDER_BY</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_numberofnews_value</string>
+
+    <!-- Label for order-by numberofnews option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_numberofnews_label">Number of news</string>
+    <string name="settings_order_by_numberofnews_value" translatable="false">number</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">Date</string>
 </resources>

@@ -133,6 +133,7 @@ public final class QueryUtils {
         // Create an empty ArrayList that we can start adding earthquakes to
         List<Article> articles = new ArrayList<>();
 
+        String author ="";
         // Catch the exception so the app doesn't crash, and print the error message to the logs.
         try {
 
@@ -158,9 +159,10 @@ public final class QueryUtils {
                 // Get link to article
                 String url = currentArticle.getString("webUrl");
                 // Get author
-                JSONObject authorField = currentArticle.getJSONObject("fields");
-                String author = authorField.getString("byline");
-
+                if(currentArticle.has("fields")){
+                    JSONObject authorField = currentArticle.optJSONObject("fields");
+                    author = authorField.optString("byline");
+                }
 
                 Article article = new Article(title, section, publicationDate, url, author);
 
