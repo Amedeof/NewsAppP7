@@ -7,7 +7,7 @@
 
     <string name="settings_numberofnews_label">Number of news</string>
     <string name="settings_numberofnews_key" translatable="false">page-size</string>
-    <string name="settings_numberofnews_default" translatable="false">0</string>
+    <string name="settings_numberofnews_default" translatable="false">3</string>
     <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
     <string name="settings_order_by_label">Order By</string>
     <string name="settings_order_by_key" translatable="false">ORDER_BY</string>
